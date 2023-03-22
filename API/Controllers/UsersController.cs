@@ -11,6 +11,7 @@ namespace API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Microsoft.AspNetCore.Cors.EnableCors("AllowAnyOrigin")]
     public class UsersController : ControllerBase
     {
         private readonly DataContext _data;
