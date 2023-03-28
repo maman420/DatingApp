@@ -9,10 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    [Microsoft.AspNetCore.Cors.EnableCors("AllowAnyOrigin")]
-    public class UsersController : ControllerBase
+    public class UsersController : BaseApiController
     {
         private readonly DataContext _data;
         public UsersController(DataContext context)
